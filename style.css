@@ -3,10 +3,17 @@
 
 :root{
     --boxShaodw: -13px 13px 26px rgba(181, 181, 181, 0.2), 13px -13px 26px rgba(181, 181, 181, 0.2), -13px -13px 26px rgba(255, 255, 255, 0.9), 13px 13px 33px rgba(181, 181, 181, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(181, 181, 181, 0.5);
+    --DarkboxShaodw: -13px 13px 26px rgba(0, 0, 0, 0.2), 13px -13px 26px rgba(17, 17, 17, 0.2), -13px -13px 26px rgba(34, 33, 33, 0.9), 13px 13px 33px rgba(54, 54, 54, 0.9), inset 1px 1px 2px rgba(5, 5, 5, 0.3), inset -1px -1px 2px rgba(31, 30, 30, 0.5);
+    
     --redPurple:  linear-gradient(234.55deg, #FF0C37 7.58%, #E60FF9 95.02%);
     --purpleBlue: linear-gradient(234.55deg, #EC0CFF 7.58%, #472AFA 95.02%);
     --blueLight: linear-gradient(45deg, #472AFA 7.58%, #0ED4E0 95.02%);
     --webBlue:  -webkit-linear-gradient(234.55deg, #472AFA 7.58%, #0ED4E0 95.02%);
+    --whiteBg: hsl(0, 0%, 100%);
+    --DarkBlueBG:hsl(230, 17%, 14%);
+    --CardBG: hsl(224deg 86% 8%);
+    --whiteText:hsl(0, 0%, 100%);
+    --toggleBG:hsl(230, 22%, 74%);
     --cardDark: #041030;
     --bgDark: #051746;
     --toggleBtnBg: #344E5D;
@@ -14,6 +21,10 @@
     --nightBtn: #F1EB75;
     --greyText: #6d6c6c;
     --quote: #D5D5D5;
+    --topBg: #041030;
+    --brightGrey:hsl(228, 34%, 66%);
+
+
 }
 
 /* font-family: 'Dosis', sans-serif; */
@@ -34,6 +45,43 @@ main h1{
     font-family: 'Dosis', sans-serif;
 
 }
+
+
+/* mode  */
+.toggle-btn{
+    width: 42px;
+    height: 20px;
+    background: var(--toggleBG);
+    border-radius: 30px;
+    padding: 1px;
+    position: relative;
+    margin-right: 4px;
+        cursor: pointer;
+}
+
+
+.white-circle{
+    position: absolute;
+    right: 2px;
+    top: 1px;
+    width: 18px;
+    height: 90%;
+    border-radius: 50%;
+    background: var(--whiteBg);
+}
+.dark-mode{
+    display: flex;
+    place-items: center;
+    margin: 6px 0;
+}
+.mode-text{
+    display: flex;
+    place-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
 main h1 span{
     font-family: 'Molle', cursive;
     font-size:35px;
@@ -187,4 +235,34 @@ main h1{
     width: 90px;
     height: 90px;
 }
+}
+
+
+/* dark mode class features */
+.green{
+    background: linear-gradient(90deg,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+}
+.dark{
+    background: var(--topBg);
+}
+.move{
+    right: unset;
+    left: 2px;
+    /* transition: .4s all; */
+    /* background: var(--nightBtn); */
+}
+
+.card-dark{
+    background: var(--CardBG);
+}
+.white{
+    color:var(--whiteText);
+    /* font-weight: 600; */
+}
+.image-dark{
+    box-shadow: none;
+}
+
+.brightGrey{
+    color: var(--brightGrey);
 }
