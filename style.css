@@ -5,7 +5,7 @@
     --boxShaodw: -13px 13px 26px rgba(181, 181, 181, 0.2), 13px -13px 26px rgba(181, 181, 181, 0.2), -13px -13px 26px rgba(255, 255, 255, 0.9), 13px 13px 33px rgba(181, 181, 181, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(181, 181, 181, 0.5);
     --redPurple:  linear-gradient(234.55deg, #FF0C37 7.58%, #E60FF9 95.02%);
     --purpleBlue: linear-gradient(234.55deg, #EC0CFF 7.58%, #472AFA 95.02%);
-    --blueLight: linear-gradient(234.55deg, #472AFA 7.58%, #0ED4E0 95.02%);
+    --blueLight: linear-gradient(45deg, #472AFA 7.58%, #0ED4E0 95.02%);
     --webBlue:  -webkit-linear-gradient(234.55deg, #472AFA 7.58%, #0ED4E0 95.02%);
     --cardDark: #041030;
     --bgDark: #051746;
@@ -87,7 +87,12 @@ main h1 span{
 .card:nth-child(2)::before{
     background: var(--purpleBlue);
 }
-
+.card:nth-child(3)::before{
+background: var(--webBlue);
+}
+.card:nth-child(4)::before{
+    background: var(--blueLight);
+}
 .user-fig{
     width: max-content;
     height: max-content;
