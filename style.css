@@ -230,6 +230,7 @@ main h1{
 }
 .has{
     padding: 0;
+    background: none;
 }
 .image{
     width: 90px;
@@ -237,6 +238,10 @@ main h1{
 }
 }
 
+.has{
+    background: none;
+
+}
 
 /* dark mode class features */
 .green{
